@@ -1,4 +1,4 @@
-ColorMatch::Application.routes.draw do
+ColorManiac::Application.routes.draw do
   resources :paintings do
     member do
       get 'download'

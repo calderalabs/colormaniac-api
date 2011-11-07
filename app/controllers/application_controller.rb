@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def authenticate
-    authenticate_or_request_with_http_basic("ColorMatch") do |username, password|
+    authenticate_or_request_with_http_basic("ColorManiac") do |username, password|
       username == "administrator" && password == "password"
     end
   end
