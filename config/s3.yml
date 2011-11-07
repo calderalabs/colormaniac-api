@@ -1,0 +1,11 @@
+common: &common
+  access_key_id: YOUR_ACCESS_KEY
+  secret_access_key: YOUR_SECRET_ACCESS_KEY
+
+development:
+  <<: *common
+  bucket: colormatch-development
+
+production:
+  <<: *common
+  bucket: colormatch

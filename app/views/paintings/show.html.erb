@@ -1,0 +1,12 @@
+<p>
+  <b>Title:</b>
+  <%= @painting.title %><br />
+  <b>Author:</b>
+  <%= @painting.author %>
+</p>
+
+<p><%= image_tag @painting.picture.url(:normal) %></p>
+
+<%= link_to 'Edit', edit_painting_path(@painting) %> |
+<%= link_to 'Destroy', painting_path(@painting), :confirm => 'Are you sure?', :method => :delete %> |
+<%= link_to 'Back', gallery_path(@painting.gallery) %>
